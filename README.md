@@ -6,18 +6,20 @@ Electronic Old Persian Library](https://github.com/Electronic-Old-Persian-Librar
 eBL has developed models for Babylonian cuneiform but I am going to develop my models for Old Persian cuneiform. 
 
 
-## 3 OCR models are developed in this repository:
+## Three OCR models are developed in this repository:
 - ``` yolo_cnn_old_persian ```
 - ``` tessearct_old_persian ```
 - ``` easyocr_old_persian ```
 ## Current status of these 3 OCR models:
 - ``` yolo_cnn_old_persian ``` : is not completed yet.
 -  ``` tessearct_old_persian ``` is completed.
--  ``` easyocr_old_persian ``` is completed but needs more optimization.
+-  ``` easyocr_old_persian ``` is completed but needs more optimization and real data.
+
+Melanee: Since I was looking for an OCR model for Old Persian language, I have not implemented image pre-processing for my models yet and they work on just black and white images. You can use [custom images](https://github.com/Melanee-Melanee/Old-Persian-Cuneiform-OCR/tree/master/other/custom%20images) to use my OCR models.
 
 ## easyocr_old_persian
 
-This model is developed based on [EasyOCR](https://github.com/JaidedAI/EasyOCR/blob/master/custom_model.md) repository for a custum model. 
+This model is still under developing and is based on [EasyOCR](https://github.com/JaidedAI/EasyOCR/blob/master/custom_model.md) repository for a custum model. 
 If you see any error please check [issues](https://github.com/JaidedAI/EasyOCR/issues)
 
 Trainer notebook:
@@ -28,8 +30,16 @@ Using saved model:
 
 https://github.com/Melanee-Melanee/Old-Persian-Cuneiform-OCR/blob/master/easyocr_old_persian/model_easyocr.ipynb
 
+To use saved model please create the ```root``` of your machine like below structure and replace ```custum_example.pth```, ```custom_example.py``` and ```custom_example.yaml``` files there. For more comprehension please watch this tutorial on [youtube](https://www.youtube.com/watch?v=-j3TbyceShY).
 
+/root/
 
+     /EasyOCR/
+           /model/
+               custum_example.pth
+           /user_network/
+               custom_example.py
+               custom_example.yaml
 
 
 
@@ -37,7 +47,7 @@ https://github.com/Melanee-Melanee/Old-Persian-Cuneiform-OCR/blob/master/easyocr
 
 https://github.com/Melanee-Melanee/Old-Persian-Cuneiform-OCR/blob/main/Tesseract_Old_Persian_OCR.ipynb
 
-Please replace "myLang.traineddata" file in this directory: `/usr/share/tesseract-ocr/4.00/tessdata`
+Please replace ```myLang.traineddata``` file in this directory: `/usr/share/tesseract-ocr/4.00/tessdata`
 
 This tesseract pre-trained OCR model deciphers Old Persian cuneiform to English transcription and is developed by [S. Muhammad Hossein Mousavi](https://github.com/SeyedMuhammadHosseinMousavi/Extracting-Old-Persian-Cuneiform/tree/main
 ). [Tesseract](https://github.com/tesseract-ocr/tesseract) is one of the most powerful OCR models in the world.
@@ -55,25 +65,28 @@ Input:
 
 Output:
 
-Zatiy ; daryvuS ; xSayZiy;
+Zittiy ; iaryvuS ; xrSayZiy;
 
-mna;aurmzda;upstam; blauv;
+mnc;aurmzia;upstam; rlauv;
 
-hda ; ViZibiS ; bgibiS ; uta;
+hia ; ViZiriS ; rgiriS ; uta;
 
-imam;dhyaum;aulmzda;
+im am ; i h yaum ; au lm z i a ;
 
-paTuv;hca;hinaya; hca;
+pitTucs;hca;hinaya; hca;
 
-QuSiyala ; hca;druga;abiy;
+QuSiyala ; hca;iruga;ariy;
 
-imam ;dhyaum;ma; ajMiya; ait;
+imam ;ihyaum;ma; ajMiya; ait;
 
 aim ;yanm;jDiyaMiy;
 
-aitmiy ; ddaTuv
+aitmiy ; iiaTuv
 
-## At the next step, you can translate that Old Persian transcription to modern Persian by [Chat-GPT](https://chatgpt.com/):
+## At the next step, you can translate that Old Persian transcription to modern languages by [Chat-GPT](https://chatgpt.com/):
+
+Translate to Modern Persian:
+
 
 
 
@@ -87,12 +100,24 @@ aitmiy ; ddaTuv
 
 این است آنچه من می‌گویم.
 
+Translate to Modern English:
 
+“This is me, Dariush king; By the grace of Ahura Mazda, I have built this; I founded this empire and made it strong. May Ahuramazda protect me and my kingdom; may it last forever; and it would be safe from lies; that is what I did;
+That is what I am saying.”
+
+## Article
+
+I wrote an [article](https://www.researchgate.net/publication/382528886_Translating_Old_Persian_cuneiform_by_artificial_intelligence_AI) as a tiny report for what I have done for this project till now.
 
 ## Notice
 
 This repository is still under developing. For contributing contact me by email: melaneepython@gmail.com 
 
-To create pull requests for this repository please choose branches except "main" (issue, refactor and feature).
+To create pull requests for this repository please choose just these branches: issue, refactor and feature.
+
+
+## LICENSE
+This repository is under ```CC-BY-NC``` license and any commercial use is prohibited. 
+
 
 
