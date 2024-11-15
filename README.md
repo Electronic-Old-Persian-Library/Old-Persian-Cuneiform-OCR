@@ -1,9 +1,8 @@
 ## The aim of this repository is creating an OCR model (convert image to text) for Old Persian Cuneiform 
 
-This repository is inspired from [eBL project](https://github.com/ElectronicBabylonianLiterature) and is a part of [
-Electronic Old Persian Library](https://github.com/Electronic-Old-Persian-Library) organization.
+This repository is part of [
+Electronic Old Persian Library](https://github.com/Electronic-Old-Persian-Library) organization and inspired from [eBL](https://github.com/ElectronicBabylonianLiterature/generic-documentation)  project.
 
-eBL has developed models for Babylonian cuneiform but I am going to develop my models for Old Persian cuneiform. 
 
 
 ## Three OCR models have been developed in this repository:
@@ -88,7 +87,14 @@ aitmiy ; iiaTuv
 
 ## At the next stage, we can translate that Old Persian transcription to modern languages by [Chat-GPT](https://chatgpt.com/):
 
-Translate to Modern Persian:
+Prompt: Can you translate this Old Persian (achaemenid) English transcription to modern English in one paragraph?
+
+
+“This is me, Dariush king; By the grace of Ahura Mazda, I have built this; I founded this empire and made it strong. May Ahuramazda protect me and my kingdom; may it last forever; and it would be safe from lies; that is what I did;
+That is what I am saying.”
+
+
+### Translate to modern Persian:
 
 
 
@@ -103,24 +109,36 @@ Translate to Modern Persian:
 
 این است آنچه من می‌گویم.
 
-Translate to Modern English:
 
-“This is me, Dariush king; By the grace of Ahura Mazda, I have built this; I founded this empire and made it strong. May Ahuramazda protect me and my kingdom; may it last forever; and it would be safe from lies; that is what I did;
-That is what I am saying.”
 
 ## Article
 
 I wrote an [article](https://www.researchgate.net/publication/382528886_Translating_Old_Persian_cuneiform_by_artificial_intelligence_AI) as a tiny report for what I have done for this project till now.
 
-## Notice
+
+## License
+This repository is under [CC-BY-NC](https://github.com/Melanee-Melanee/Old-Persian-Cuneiform-OCR/blob/master/LICENSE-CC-BY-NC) license and any commercial use is prohibited. 
+
+
+
+## Contact
 
 This repository is still under developing. For contributing contact me by email: melaneepython@gmail.com 
 
-To create pull requests for this repository please choose just these branches: issue, refactor and feature.
 
 
-## LICENSE
-This repository is under [CC-BY-NC](https://github.com/Melanee-Melanee/Old-Persian-Cuneiform-OCR/blob/master/LICENSE-CC-BY-NC) license and any commercial use is prohibited. 
+## Donate (Financial sponsers)
+
+- Shaghayegh Rahmani (Melanee)
+- Dr. Zohre Akbari
+- Dr. Hassan Ghaed
+- 4 Unkown sponsers
+
+
+
+If you would like to support this project financially, you can use this link:
+
+https://github.com/Melanee-Melanee/Old-Persian-Cuneiform-OCR/blob/master/other/Financial.md
 
 
 
